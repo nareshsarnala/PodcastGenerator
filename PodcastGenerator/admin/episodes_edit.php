@@ -116,7 +116,7 @@ if (count($_POST) > 0) {
 	    <guid>' . htmlspecialchars($guid) . '</guid>
 	    <titlePG>' . htmlspecialchars($_POST['title'], ENT_NOQUOTES) . '</titlePG>
 	    <shortdescPG><![CDATA[' . $_POST['shortdesc'] . ']]></shortdescPG>
-	    <longdescPG><![CDATA[' . $long_desc . ']]></longdescPG>
+	    <longdescPG><![CDATA[' . htmlspecialchars( $long_desc) . ']]></longdescPG>
 	    <imgPG></imgPG>
 	    <categoriesPG>
 	        <category1PG>' . htmlspecialchars($_POST['category'][0]) . '</category1PG>
