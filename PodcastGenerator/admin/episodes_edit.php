@@ -115,7 +115,7 @@ if (count($_POST) > 0) {
 	<episode>
 	    <guid>' . htmlspecialchars($guid) . '</guid>
 	    <titlePG>' . htmlspecialchars($_POST['title'], ENT_NOQUOTES) . '</titlePG>
-	    <shortdescPG><![CDATA[' . $_POST['shortdesc'] . ']]></shortdescPG>
+	    <shortdescPG><![CDATA[' . htmlspecialchars($_POST['shortdesc']) . ']]></shortdescPG>
 	    <longdescPG><![CDATA[' . htmlspecialchars( $long_desc) . ']]></longdescPG>
 	    <imgPG></imgPG>
 	    <categoriesPG>
